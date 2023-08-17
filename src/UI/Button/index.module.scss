@@ -1,0 +1,22 @@
+.button {
+  display: block;
+  background-color: var(--background-button-primary);
+  border-radius: 0.3rem;
+  border: 1px solid;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.65;
+  box-shadow: 0 2px 3px var(--box-shadow-button-primary);
+
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 0 2px 3px var(--box-shadow-button-primary-hover);
+  }
+
+  &:active {
+    opacity: 1;
+    box-shadow: 0 2px 3px var(--box-shadow-button-primary-active);
+  }
+}

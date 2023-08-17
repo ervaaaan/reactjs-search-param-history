@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+
+:root[data-theme="light"] {
+  --background-color: #ffffff;
+  --switch-theme-color: #1c1e21;
+  --color-primary: #1e1e1e;
+  --color-error-primary: red;
+  --background-card-primary: #f9f9f9;
+  --background-button-primary: #f7f3f3;
+  --border-input-primary: #282e34;
+  --box-shadow-25: rgba(0, 0, 0, 0.25);
+  --box-shadow-35: rgba(0, 0, 0, 0.35);
+  --box-shadow-40: rgba(0, 0, 0, 0.4);
+  --box-shadow-50: rgba(0, 0, 0, 0.5);
+  --box-shadow-80: rgba(0, 0, 0, 0.8);
+  --box-shadow-button-primary: var(--box-shadow-25);
+  --box-shadow-button-primary-hover: var(--box-shadow-50);
+  --box-shadow-button-primary-active: var(--box-shadow-80);
+  --box-shadow-button-comment: var(--box-shadow-40);
+  --box-shadow-button-comment-hover: var(--box-shadow-50);
+  --box-shadow-button-comment-active: var(--box-shadow-80);
+  --box-shadow-card-primary: var(--box-shadow-25);
+  --box-shadow-single-news-hover: rgba(0, 0, 0, 0.1);
+  --box-shadow-single-comment: var(--box-shadow-35);
+}
+
+:root[data-theme="dark"] {
+  --background-color: #222529;
+  --switch-theme-color: #f5f6f7;
+  --color-primary: #dcdcdc;
+  --color-error-primary: red;
+  --background-card-primary: #282e34;
+  --background-button-primary: #282e34;
+  --border-input-primary: #dcdcdc;
+  --box-shadow-25: rgba(0, 0, 0, 0.1);
+  --box-shadow-35: rgba(0, 0, 0, 0.2);
+  --box-shadow-40: rgba(0, 0, 0, 0.25);
+  --box-shadow-50: rgba(0, 0, 0, 0.3);
+  --box-shadow-80: rgba(0, 0, 0, 0.4);
+  --box-shadow-button-primary: var(--box-shadow-25);
+  --box-shadow-button-primary-hover: var(--box-shadow-50);
+  --box-shadow-button-primary-active: var(--box-shadow-80);
+  --box-shadow-button-comment: var(--box-shadow-40);
+  --box-shadow-button-comment-hover: var(--box-shadow-50);
+  --box-shadow-button-comment-active: var(--box-shadow-80);
+  --box-shadow-card-primary: var(--box-shadow-25);
+  --box-shadow-single-news-hover: rgba(194, 216, 255, 0.25);
+  --box-shadow-single-comment: var(--box-shadow-35);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--color-primary);
+}
+
+body {
+  background: var(--background-color);
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}

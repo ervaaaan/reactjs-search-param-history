@@ -1,0 +1,12 @@
+@import "../../styles/variables.scss";
+
+.card {
+  padding: 0.5rem 0.8rem;
+  background-color: var(--background-card-primary);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px var(--box-shadow-card-primary);
+
+  @media (min-width: $breakpoint-md) {
+    padding: 1rem;
+  }
+}

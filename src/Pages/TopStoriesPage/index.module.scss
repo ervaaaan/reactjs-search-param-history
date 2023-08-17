@@ -1,0 +1,66 @@
+@import "../../styles/variables.scss";
+
+.news-list {
+  padding: 0.5rem;
+
+  & h2 {
+    margin: 1rem 0 2.5rem;
+    text-align: center;
+  }
+
+  & .error {
+    margin-top: 8rem;
+    text-align: center;
+    color: var(--color-error-primary);
+  }
+
+  & .empty {
+    margin-top: 8rem;
+    text-align: center;
+  }
+}
+
+.toolbar {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0.5rem;
+
+  .title {
+    margin: 0.5rem;
+    font-weight: bold;
+  }
+
+  .tools {
+    display: flex;
+    justify-content: flex-end;
+
+    .search {
+      margin-right: 1rem;
+    }
+
+    .button {
+      white-space: nowrap;
+      padding: 0.3rem 1rem 0.3rem 1.2rem;
+    }
+
+    .refresh-icon {
+      vertical-align: text-bottom;
+      margin-left: 0.4rem;
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    width: 60%;
+  }
+}

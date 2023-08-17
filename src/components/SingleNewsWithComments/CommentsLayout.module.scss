@@ -1,0 +1,23 @@
+@import "../../styles/variables.scss";
+
+.comments-wrapper {
+  display: grid;
+  margin: 0 auto;
+  padding: 0.5rem;
+
+  & h3 {
+    margin: 0 0 2rem;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    width: 90%;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    width: 80%;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    width: 60%;
+  }
+}

@@ -1,0 +1,43 @@
+.input {
+  white-space: nowrap;
+  background-color: var(--background-button-primary);
+  border-radius: 0.3rem;
+  border: 1px solid;
+  box-shadow: 0 2px 3px var(--box-shadow-button-primary);
+  opacity: 0.65;
+
+  input {
+    margin-right: 1.8rem;
+    padding-left: 1rem;
+    height: 100%;
+    border: 0;
+    outline: none;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    font-family: "JetBrains Mono", monospace;
+
+    &::placeholder {
+      font-family: "JetBrains Mono", monospace;
+    }
+  }
+
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 0 2px 3px var(--box-shadow-button-primary-hover);
+  }
+
+  svg {
+    position: absolute;
+    height: 1.4rem;
+    margin-top: 0.4rem;
+    margin-left: -1.8rem;
+  }
+
+  @media (max-width: 540px) {
+    svg {
+      margin-top: 1rem;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../../styles/variables.scss";
+
+.single-news {
+  word-break: break-word;
+  margin-bottom: 1rem;
+
+  & h4 {
+    margin: 0.5rem 0 1rem;
+  }
+
+  & p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  &:hover {
+    box-shadow: 0 1px 3px var(--box-shadow-single-news-hover);
+  }
+}
+
+.article {
+  cursor: pointer;
+}
+
+.author span {
+  font-weight: bold;
+}
+
+.wrapper {
+  @media (min-width: $breakpoint-md) {
+    display: grid;
+    grid-template-columns: 8rem 12rem auto;
+    column-gap: 2rem;
+  }
+}

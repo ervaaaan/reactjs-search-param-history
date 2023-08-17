@@ -1,0 +1,78 @@
+@import "../../styles/variables.scss";
+
+.visually-hidden {
+  position: absolute;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.single-news {
+  padding: 0.5rem;
+
+  & h2 {
+    margin: 1rem 0 1.5rem;
+    text-align: center;
+  }
+
+  & .error {
+    margin-top: 5rem;
+    text-align: center;
+    color: var(--color-error-primary);
+  }
+}
+
+.navigate-button {
+  margin: 0 auto 2rem;
+  padding: 0.8rem 1.6rem 0.8rem 1rem;
+
+  @media (max-width: $breakpoint-sm) {
+    & span {
+      display: none;
+    }
+  }
+}
+
+.comments-button {
+  margin: 0 0.5rem -2.2rem auto;
+  padding: 0.2rem 1rem 0.2rem 1.2rem;
+
+  @media (max-width: $breakpoint-sm) {
+    & span {
+      display: none;
+    }
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    margin: 0 0.5rem -2.3rem auto;
+    padding: 0.3rem 1rem 0.3rem 1.2rem;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    margin: 0 calc(5vw) -2.4rem auto;
+    padding: 0.5rem 1.2rem 0.5rem 1.6rem;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    margin: 0 calc(9.45vw) -2.4rem auto;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    margin: 0 calc(18.3vw) -2.4rem auto;
+  }
+}
+
+.refresh-icon {
+  vertical-align: text-bottom;
+}
+
+.back-icon {
+  margin-right: 0.4rem;
+  vertical-align: text-bottom;
+}
